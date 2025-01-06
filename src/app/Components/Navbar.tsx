@@ -12,7 +12,6 @@ function Navbar() {
 
   return (
     <nav className="flex justify-between items-center bg-white text-black shadow-sm font-mono p-4">
-      {/* Logo Section */}
       <div className="logo pl-3">
         <Image
           src="./images/logo.svg"
@@ -22,7 +21,6 @@ function Navbar() {
         />
       </div>
 
-      {/* Hamburger Menu for Mobile */}
       <button
         className="sm:hidden text-2xl focus:outline-none"
         onClick={handleNavbar}
@@ -32,7 +30,6 @@ function Navbar() {
         &#9776;
       </button>
 
-      {/* Navigation Links */}
       <ul
         className={`transition-all duration-300 ease-in-out text-black sm:flex sm:items-center sm:gap-8 absolute sm:static bg-white w-full sm:w-auto left-0 z-10 ${
           navbarOpen ? "top-16 opacity-100" : "top-[-400px] opacity-100"
