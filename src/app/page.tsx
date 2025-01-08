@@ -1,11 +1,19 @@
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
 
-export default function Home() {
+import Navbar from './Components/Navbar';
+import HeroFetcher from './Components/HeroFetcher';
+import TranningProgram from './Components/trainingProgram';
+const HomePage: React.FC = () => {
+  
+     
+
+  
   return (
-    <>
-    <Navbar/>
-    <Hero/>
-    </>
+    <div>
+      <Navbar />
+      <HeroFetcher />
+      <TranningProgram/>
+    </div>
   );
 }
+
+export default HomePage;
