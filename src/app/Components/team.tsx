@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { Card } from 'antd';
 import Meta from 'antd/es/card/Meta';
-import sanityClient from '@sanity/client';
 import { client } from '@/sanity/lib/client';
 
 // Define TypeScript types for team member data
