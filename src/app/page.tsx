@@ -2,6 +2,7 @@
 import Navbar from './Components/Navbar';
 import HeroFetcher from './Components/HeroFetcher';
 import TranningProgram from './Components/trainingProgram';
+import Team from './Components/team';
 const HomePage: React.FC = () => {
   
      
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
       <Navbar />
       <HeroFetcher />
       <TranningProgram/>
+      <Team/>
     </div>
   );
 }
