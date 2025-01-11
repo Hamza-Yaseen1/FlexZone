@@ -4,9 +4,9 @@ import sanityClient from '@sanity/client';
 import Hero from './Hero';
 
 const client = sanityClient({
-  projectId: '9gjavzge', // Replace with your Sanity project ID
-  dataset: 'production',       // Replace with your dataset name
-  apiVersion: '2023-01-01',    // Use the current API version
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,       
+  apiVersion: process.env.NEXT_PUBLIC_SANITY_API_VERSION,    
   useCdn: true,
 });
 
