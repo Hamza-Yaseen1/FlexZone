@@ -65,3 +65,9 @@
   }
 }
 
+
+@media (max-width: 600px) {
+  .offerCard img {
+  margin-top: 13px;
+  height: 320px;
+  }}

@@ -5,6 +5,7 @@ import TranningProgram from './Components/trainingProgram';
 import Team from './Components/team';
 import Membership from './Components/MemberShip';
 import Offer from './Components/Offer';
+import Footer from './Components/footer';
 const HomePage: React.FC = () => {
   
      
@@ -17,8 +18,9 @@ const HomePage: React.FC = () => {
       <TranningProgram/>
       <Team/>
       <Membership/>
-
       <Offer/>
+      <br />
+      <Footer/>
     </>
   );
 }
