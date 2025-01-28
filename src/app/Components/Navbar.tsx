@@ -36,27 +36,27 @@ function Navbar() {
         }`}
       >
         <li className="px-4 py-2 sm:px-0">
-          <a href="#" className="hover:text-purple-500">
+          <a href="./" className="hover:text-purple-500">
             Home
           </a>
         </li>
         <li className="px-4 py-2 sm:px-0">
-          <a href="#" className="hover:text-purple-500">
+          <a href="/About" className="hover:text-purple-500">
             About Us
           </a>
         </li>
         <li className="px-4 py-2 sm:px-0">
-          <a href="#" className="hover:text-purple-500">
+          <a href="/Pricing" className="hover:text-purple-500">
             Pricing
           </a>
         </li>
         <li className="px-4 py-2 sm:px-0">
-          <a href="#" className="hover:text-purple-500">
+          <a href="/Team" className="hover:text-purple-500">
             Team
           </a>
         </li>
         <li className="px-4 py-2 sm:px-0">
-          <a href="#" className="hover:text-purple-500">
+          <a href="/Contact" className="hover:text-purple-500">
             Contact
           </a>
         </li>
