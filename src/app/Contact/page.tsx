@@ -10,10 +10,10 @@ const Contact = () => {
           headingLine2="With Consistency and Dedication"
           para="Discover the best fitness programs and tips for a healthier lifestyle. Build strength, burn calories, and stay active with our tailored plans."
           bottomLinks={[
-            "Programs",
-            "Nutrition",
-            "Trainers",
-            "Membership",
+            "✔Programs",
+            "✔Nutrition",
+            "✔Trainers",
+            "✔Membership",
           ]} footerLink={""}        />
           <br /><br /><br />
           <div className="cards grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center">

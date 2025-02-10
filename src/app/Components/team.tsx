@@ -29,7 +29,6 @@ function Team() {
 
   return (
     <div className="team items-center">
-      <h1 className="text-3xl p-5 font-bold text-center">Our Team</h1>
       <div className="cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-5">
         {teamMembers.map((member) => (
           <Card

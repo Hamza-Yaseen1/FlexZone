@@ -51,7 +51,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold text-orange-500">
                 Follow Us
               </h3>
-              <ul className="flex justify-center lg:justify-start space-x-8 pt-6">
+              {/* <ul className="flex justify-center lg:justify-start space-x-8 pt-6">
                 <li className="hover:text-orange-500 transition-colors">
                   <a
                     href="#"
@@ -88,7 +88,22 @@ const Footer = () => {
                     <FaLinkedin size={20} />
                   </a>
                 </li>
-              </ul>
+              </ul> */}
+               <ul className="space-y-2 text-gray-300 pt-8 ml-6">
+      {[
+        <FaFacebook size={20} key="facebook" />,
+        <FaInstagram size={20} key="instagram" />,
+        <FaTwitter size={20} key="twitter" />,
+        <FaLinkedin size={20} key="linkedin" />
+
+      ].map((link, index) => (
+        <li key={index} className="hover:text-orange-500 transition-colors pt-3">
+          <a href="#" className="hover:text-orange-500 transition-colors">
+            {link}
+          </a>
+        </li>
+      ))}
+    </ul>
             </div>
           </nav>
 

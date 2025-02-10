@@ -13,6 +13,7 @@ const HomePage: React.FC = () => {
     <>
       <HeroFetcher />
       <TranningProgram/>
+      <h1 className="text-3xl p-5 font-bold text-center">Our Team</h1>
       <Team/>
       <Membership/>
       <Offer/>
