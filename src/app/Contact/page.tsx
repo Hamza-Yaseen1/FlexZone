@@ -61,15 +61,16 @@ const Contact = () => {
   </div>
 </div>
 
-
-<div className="contact-details mt-16  w-4/5 m-auto  shadow-2xl">
- <div className="content p-12">
- <h1 className="text-4xl font-bold text-center">Let&apos;s Contact US</h1>
- <p className="text-xl md:font-semibold sm:font-medium  text-center sm:p-0  md:p-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
- </p>
- </div>
- <ContactForm/>
-</div>
+    <div className=" mx-auto mt-16 shadow-2xl bg-white rounded-lg">
+      <div className="p-8 md:p-12">
+        <h1 className="text-4xl font-bold text-center ">Let&apos;s Contact Us</h1>
+        <p className=" text-gray-600 text-center mt-4 md:px-10">
+          Have questions or want to learn more about our fitness programs? We&apos;re here to help! Fill out the form below and our team will get back to you as soon as possible.
+        </p>
+      </div>
+      <ContactForm />
+    </div>
+  
       </div>
     );
   };

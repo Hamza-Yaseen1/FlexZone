@@ -1,5 +1,7 @@
 import MainCard from "../Components/Maincard";
-
+import Offer from "../Components/Offer";
+import Membership from "../Components/MemberShip";
+import Team from "../Components/team";
 const Price = () => {
     return (
       <div>
@@ -11,6 +13,11 @@ const Price = () => {
           bottomLinks={[
             "",
           ]} footerLink={""}        />
+           <Membership/>
+           <h1 className="text-3xl p-5 font-bold text-center">Our Team</h1>
+
+           <Team/>
+           <Offer/>
       </div>
     );
   };
