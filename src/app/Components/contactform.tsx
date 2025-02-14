@@ -31,6 +31,12 @@ export default function ContactForm() {
 
       if (response.ok) {
         setStatus("✔");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+        });
       } else {
         setStatus("Failed to send email.");
       }
