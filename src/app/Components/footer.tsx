@@ -23,10 +23,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <nav
-            className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-16 text-center lg:text-left"
+            className="flex  md:flex-row  md:space-x-16 lg:space-y-0 lg:space-x-16 text-center lg:text-left"
             aria-label="Footer Navigation"
           >
-            <div>
+            <div >
               <h3 className="text-lg font-semibold text-orange-500">
                 Quick Links
               </h3>
@@ -47,7 +47,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="ml-10">
               <h3 className="text-lg font-semibold text-orange-500">
                 Follow Us
               </h3>
