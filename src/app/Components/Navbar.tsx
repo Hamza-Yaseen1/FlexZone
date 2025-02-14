@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { ModeToggle } from "./ModeToogle";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -60,12 +60,11 @@ function Navbar() {
             Contact
           </a>
         </li>
-        <li className="px-4 py-2 sm:px-0">
-          <a href="#">
-            <Button variant="outline" className="bg-purple-500 text-white">
-            Button{/*  put toogle button here which is already created in modeToggle.tsx file just import it here and use it  */}
-            </Button>
-          </a>
+        <li className="px-4 py-2 sm:px-0 dark:text-white">
+          
+            <ModeToggle/>{/*  put toogle button here which is already created in modeToggle.tsx file just import it here and use it  */}
+            
+          
         </li>
       </ul>
     </nav>

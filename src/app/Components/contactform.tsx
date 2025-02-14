@@ -52,54 +52,63 @@ export default function ContactForm() {
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="firstName" className="block text-gray-700 mb-1">First Name:</label>
+            <label htmlFor="firstName" className="block text-gray-700 mb-1 font-semibold">First Name:</label>
             <input
               type="text"
               id="firstName"
               value={formData.firstName}
               required onChange={handleChange}
               placeholder="Enter First Name"
-              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-orange-600 focus:border-orange-00"
             />
           </div>
           <div>
-            <label htmlFor="lastName" className="block text-gray-700 mb-1">Last Name:</label>
+            <label htmlFor="lastName" className="block text-gray-700 mb-1 font-semibold">Last Name:</label>
             <input
               type="text"
               id="lastName"
               placeholder="Enter Last Name"
               value={formData.lastName}
               required onChange={handleChange}
-              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-orange-600 focus:border-orange"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="email" className="block text-gray-700 mb-1 lg:mt-10">Email:</label>
+            <label htmlFor="email" className="block text-gray-700 mb-1 lg:mt-10 font-semibold">Email:</label>
             <input
               type="email"
               id="email"
               placeholder="Enter Email"
               value={formData.email}
               required onChange={handleChange}
-              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-orange-600 focus:border-orange-600"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-gray-700 mb-1 lg:mt-10">Phone Number:</label>
+            <label htmlFor="phone" className="block text-gray-700 mb-1 lg:mt-10 font-semibold">Phone Number:</label>
             <input
               type="text"
               id="phone"
               placeholder="Enter Phone Number"
               value={formData.phone}
               required onChange={handleChange}
-              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-2 focus:ring-orange-600 focus:border-orange-600"
             />
           </div>
         </div>
-
+<div className="msg">
+  <label htmlFor="message" className="block text-gray-700 mb-1 lg:mt-10 font-bold">We can help you?</label>
+  <textarea 
+    name="message" 
+    id="message" 
+    rows={5}
+    placeholder="Hi we are interested in your services..." 
+    className="border border-gray-300 rounded px-3 py-2 w-full focus:ring-4 focus:ring-orange-600 focus:border-orange-600"
+  ></textarea>
+</div>
         <div className="text-center pt-6">
           <button
             type="submit"
