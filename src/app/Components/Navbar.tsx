@@ -62,9 +62,7 @@ function Navbar() {
         </li>
         <li className="px-4 py-2 sm:px-0 dark:text-white">
           
-            <ModeToggle/>{/*  put toogle button here which is already created in modeToggle.tsx file just import it here and use it  */}
-            
-          
+            <ModeToggle/>       
         </li>
       </ul>
     </nav>
