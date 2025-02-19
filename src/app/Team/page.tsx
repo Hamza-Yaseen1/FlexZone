@@ -24,8 +24,8 @@ const Team = () => {
                <TeamMember />
                <TeamMember />
                <div className="main-heading">
-                <h1 className="md:text-4xl font-bold text-center pt-9 sm:text-2xl">Our Team</h1>
-                <p className="text-gray-500 text-center md:text-2xl pt-2 sm:text-2xl">Meet the dedicated team behind our fitness journey</p>
+                <h1 className="md:text-4xl font-bold text-center pt-9 sm:text-2xl">Why Choose Us</h1>
+                <p className="text-gray-500 text-center md:text-2xl pt-2 sm:text-2xl">Why Choose Us For Your Fitness Journey </p>
                </div>
                <div className="cards grid max-lg:grid-cols-1 lg:flex lg:justify-center gap-5 pt-16">
   {["Fitness Goals", "Dedicated team", "Winning strategy"].map((title, index) => (
