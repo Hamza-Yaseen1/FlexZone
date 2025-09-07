@@ -5,14 +5,7 @@ export default defineType({
   title: 'Hero Section',
   type: 'document',
   fields: [
-    {
-      name: 'backgroundImage',
-      title: 'Background Image',
-      type: 'image',
-      options: {
-        hotspot: true, // Allows cropping
-      },
-    },
+   
     {
       name: 'heading',
       title: 'Heading Text',

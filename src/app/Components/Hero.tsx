@@ -19,35 +19,36 @@ type HeroProps = {
 
 const Hero: React.FC<HeroProps> = ({ heroData }) => {
   const {
-    backgroundImage,
+    // backgroundImage,
     heading,
     paragraph,
     buttonText,
-    textColor,
-    buttonColor,
-    buttonTextColor,
+    // textColor,
+    // buttonColor,
+    // buttonTextColor,
   } = heroData;
 
   return (
     <>
       <div
-        className="hero h-screen flex items-center justify-center"
+        className="hero h-screen flex items-center justify-center bg-black/50"
         style={{
-          backgroundImage: `url(${backgroundImage.asset.url})`,
+          // backgroundImage: `url(${backgroundImage.asset.url})`,
+          backgroundImage: `url('https://plus.unsplash.com/premium_photo-1670505062582-fdaa83c23c9e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHx8MA%3D%3D')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="container mx-auto flex flex-col items-center justify-center h-screen">
           <div className="text-center">
-            <h1 className={`text-5xl font-bold text-${textColor} `}>
+            <h1 className={`text-5xl font-bold  text-white drop-shadow-[0_0_12px_rgba(0,153,255,0.9)]`}>
               {heading}
             </h1>
-            <p className={`mt-4 text-${textColor}`}>{paragraph}</p>
+            <p className={`mt-4 text-white bg-blue-600 font-bold drop-shadow-[0_0_12px_rgba(57,255,20,0.9)]0`}>{paragraph}</p>
             <div className="mt-8">
               <Button
-                variant="outline"
-                className={`bg-${buttonColor} text-${buttonTextColor}`}
+                variant="default"
+                className={`bg-white text-black font-bold hover:bg-black hover:text-white translate-x-0 hover:scale-110 transition-transform duration-300`}
               >
                 {buttonText}
               </Button>
